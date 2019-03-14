@@ -9,11 +9,18 @@ toast("开始...")
 
 
 
+// var i = app.intent({
+//     action: "VIEW",
+//     type: "image/png",
+//     data: "file:///sdcard/Pictures/Screenshots/S90311-040913.png"
+// });
+// context.startActivity(i);
+// console.log(device.getAvailMem());
 
-//sleep(5000);
-//robot.clickRegTextCenter("\\+\\d+里程");
-robot.clickRegDescCenter("签到\\+\\d+里程");
+robot.shell("am start -n org.autojs.autojs/.external.open.RunIntentActivity -d file:///storage/emulated/0/脚本/大众点评-签到.js -t text/javascript")
+
+
 
 // ==================================================
-sleep(1000)
+sleep(10000)
 toast("结束...")
