@@ -1,13 +1,10 @@
-toast("开始...");
-auto();
-const WIDTH = Math.min(device.width, device.height);
-const HEIGHT = Math.max(device.width, device.height);
-setScreenMetrics(WIDTH, HEIGHT);
-
+auto.waitFor();
 var Robot = require("./common/Robot.js");
 var robot = new Robot();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
+robot.before();
+
 unlock.unlock();
 sleep(2000);
 
@@ -27,17 +24,16 @@ sleep(4000);
 robot.clickIdCenter("jdpay_payinfo_txt_pay"); //立即支付
 sleep(2000);
 
-
+// 密码不同需要自定义
 let pwdPoints = [
     [899, 1838], 
     [525, 1707],
     [553, 1827],
     [881, 1959],
     [573, 2081],
-    [1551, 1980]
+    [551, 1980]
 ];
 robot.clickMulti(pwdPoints, 1000);
 sleep(6000);
 robot.kill("com.jd.jrapp");
-toast("结束...")
-exit();
+robot.after();

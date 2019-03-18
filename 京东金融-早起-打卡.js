@@ -1,13 +1,10 @@
-toast("开始...");
-auto();
-const WIDTH = Math.min(device.width, device.height);
-const HEIGHT = Math.max(device.width, device.height);
-setScreenMetrics(WIDTH, HEIGHT);
-
+auto.waitFor();
 var Robot = require("./common/Robot.js");
 var robot = new Robot();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
+robot.before();
+
 unlock.unlock();
 sleep(2000);
 
@@ -22,5 +19,4 @@ sleep(5000);
 click(475, 1063); // 打卡TODO
 sleep(2000);
 robot.kill("com.jd.jrapp");
-toast("结束...")
-exit();
+robot.after();

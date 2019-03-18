@@ -80,6 +80,23 @@ function Robot() {
     this.kill = function (packageName) {
         shell("am force-stop " + packageName, true);
     };
+
+
+    this.before = function () {
+        let source = engines.myEngine().source.toString();
+        source = source.replace("/storage/emulated/0/脚本/", "");
+        toast("开始执行[" + source + "]...");
+        
+        const WIDTH = Math.min(device.width, device.height);
+        const HEIGHT = Math.max(device.width, device.height);
+        setScreenMetrics(WIDTH, HEIGHT);
+    };
+    this.after = function () {
+        let source = engines.myEngine().source.toString();
+        source = source.replace("/storage/emulated/0/脚本/", "");
+        toast("结束执行[" + source + "]...");
+        exit();
+    };
 }
 
 module.exports = Robot;

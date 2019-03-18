@@ -1,13 +1,10 @@
-toast("开始...");
-auto();
-const WIDTH = Math.min(device.width, device.height);
-const HEIGHT = Math.max(device.width, device.height);
-setScreenMetrics(WIDTH, HEIGHT);
-
+auto.waitFor();
 var Robot = require("./common/Robot.js");
 var robot = new Robot();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
+robot.before();
+
 unlock.unlock();
 sleep(2000);
 
@@ -20,7 +17,16 @@ robot.clickTextCenter("签到");
 sleep(5000);
 robot.clickDescCenter("签到领钢镚");
 sleep(2000);
+//TODO 签到成功弹窗?关闭
+
+
+
+robot.click(980, 1850); //进入"双签领京豆"
+sleep(4000);
+robot.clickDescCenter("完成双签领取");
+sleep(2000);
+robot.clickDescCenter("立即领取");
+sleep(2000);
 
 robot.kill("com.jd.jrapp");
-toast("结束...")
-exit();
+robot.after();

@@ -1,13 +1,10 @@
-toast("开始...");
-auto();
-const WIDTH = Math.min(device.width, device.height);
-const HEIGHT = Math.max(device.width, device.height);
-setScreenMetrics(WIDTH, HEIGHT);
-
+auto.waitFor();
 var Robot = require("./common/Robot.js");
 var robot = new Robot();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
+robot.before();
+
 unlock.unlock();
 sleep(2000);
 
@@ -23,5 +20,4 @@ sleep(4000);
 robot.clickRegDescCenter("签到\\+\\d+里程");
 sleep(2000);
 robot.kill("com.taobao.trip");
-toast("结束...")
-exit();
+robot.after();

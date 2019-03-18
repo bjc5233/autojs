@@ -1,13 +1,10 @@
-toast("开始...");
-auto();
-const WIDTH = Math.min(device.width, device.height);
-const HEIGHT = Math.max(device.width, device.height);
-setScreenMetrics(WIDTH, HEIGHT);
-
+auto.waitFor();
 var Robot = require("./common/Robot.js");
 var robot = new Robot();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
+robot.before();
+
 unlock.unlock();
 sleep(2000);
 
@@ -25,10 +22,11 @@ if (text("连续参与才能继续膨胀哦~").exists()) {
 
 let signStrs = ["签到奖励", "云钻", "签到集up", "疯抢48小时"];
 signStrs.forEach(function (str) {
-    robot.clickTextCenter(str);
-    sleep(3000);
+    if (text(str).exists()) {
+        robot.clickTextCenter(str);
+        sleep(3000);
+    }
 });
 
 robot.kill("com.suning.mobile.ebuy");
-toast("结束...")
-exit();
+robot.after();

@@ -4,13 +4,9 @@ var robot = new Robot();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
 robot.before();
-unlock.unlock();
-// ==================================================
 
-
-robot.clickTextCenter("不赚钱,离开");
-
-
-// ==================================================
-sleep(1000);
+launch("us.ultrasurf.mobile.ultrasurf");
+waitForActivity("us.ultrasurf.mobile.ultrasurf.MainActivity");
+sleep(200);
+robot.clickIdCenter("mySwitch");
 robot.after();
