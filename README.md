@@ -30,3 +30,13 @@ am start -n org.autojs.autojs/.external.open.RunIntentActivity -d file:///storag
 ```
 3. autojs自带定时功能可靠性较差，因此使用tasker处理[autojs.prj.xml]
 4. 编写代码注意[代码尽量全在PC端vscode中编写，使用ftp同步到手机端]
+
+
+
+
+
+### 展示
+<div align=center><img height="1080" width="540" src="https://github.com/bjc5233/autojs/raw/master/resources/demo1.png"/></div>
+<br>
+<div align=center><img height="1080" width="540" src="https://github.com/bjc5233/autojs/raw/master/resources/demo2.png"/></div>
+<br>
