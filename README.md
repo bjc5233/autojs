@@ -15,8 +15,11 @@
 8. 什么值得买
 9. 苏宁易购
 10. 淘宝
-11. 云闪付
-12. 支付宝
+11. 腾讯wifi管家
+12. 新浪微博
+13. 云闪付
+14. 支付宝
+15. 支付宝体育服务
 
 
 
@@ -31,6 +34,12 @@ am start -n org.autojs.autojs/.external.open.RunIntentActivity -d file:///storag
 3. autojs自带定时功能可靠性较差，因此使用tasker处理[autojs.prj.xml]
 4. 编写代码注意[代码尽量全在PC端vscode中编写，使用ftp同步到手机端]
 
+
+
+
+
+### TODO
+1. 添加早起打卡类应用
 
 
 

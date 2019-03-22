@@ -20,8 +20,8 @@ sleep(2000);
 robot.kill("com.sh.cm.shydhn");
 sleep(2000);
 launch("com.sh.cm.shydhn");
-waitForActivity("com.richeninfo.cm.shydhn.ui.v4.ui.activity.HomeActivity")
-sleep(5000);
+waitForActivity("com.richeninfo.cm.shydhn.ui.v4.ui.activity.HomeActivity");
+sleep(8000);
 
 if (id("iv_close1").exists()) {
     robot.clickIdCenter("iv_close1"); //弹出的广告

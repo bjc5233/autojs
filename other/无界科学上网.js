@@ -3,7 +3,7 @@ var Robot = require("./common/Robot.js");
 var robot = new Robot();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
-robot.before();
+robot.before(true);
 
 launch("us.ultrasurf.mobile.ultrasurf");
 waitForActivity("us.ultrasurf.mobile.ultrasurf.MainActivity");

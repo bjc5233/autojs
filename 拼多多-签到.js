@@ -24,8 +24,8 @@ robot.clickTextCenter("现金签到"); //进入签到页按钮
 sleep(3000);
 robot.clickTextCenter("签到领微信零钱"); //签到按钮
 sleep(2000);
-//TODO 签到完成的弹窗关闭
-
+robot.click(520, 1470); //签到完成的弹窗关闭
+sleep(2000);
 
 
 //定时领红包

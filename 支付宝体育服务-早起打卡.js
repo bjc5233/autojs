@@ -1,3 +1,4 @@
+// 确保支付宝首页添加了[体育服务]应用
 auto.waitFor();
 var Robot = require("./common/Robot.js");
 var robot = new Robot();
@@ -14,20 +15,18 @@ sleep(2000);
 launch("com.eg.android.AlipayGphone");
 waitForActivity("com.eg.android.AlipayGphone.AlipayLogin")
 sleep(5000);
-robot.clickTextCenter("我的");
+robot.clickTextCenter("体育服务");
 sleep(4000);
-robot.clickTextCenter("支付宝会员");
+robot.clickDescCenter("早起打卡 早起有红包");
 sleep(4000);
-if (desc("弹屏").exists()) {
-    robot.clickDescCenter("关闭"); // 支付宝会员日弹窗
-    sleep(1000);
-}
-robot.clickDescCenter("领积分");
-sleep(4000);
-while (desc("点击领取").exists()) {
-    robot.clickDescCenter("点击领取");
-    sleep(6000);
-}
+robot.clickDescCenter("立即报名瓜分奖励金");
+
+
+
+
+
+
+
 
 robot.kill("com.eg.android.AlipayGphone");
 robot.after();
