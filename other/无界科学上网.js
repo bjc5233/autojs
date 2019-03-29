@@ -1,7 +1,7 @@
 auto.waitFor();
-var Robot = require("./common/Robot.js");
+var Robot = require("../common/Robot.js");
 var robot = new Robot();
-var Unlock = require("./common/Unlock.js");
+var Unlock = require("../common/Unlock.js");
 var unlock = new Unlock();
 robot.before(true);
 

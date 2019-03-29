@@ -40,6 +40,7 @@ am start -n org.autojs.autojs/.external.open.RunIntentActivity -d file:///storag
 
 ### TODO
 1. 添加早起打卡类应用
+2. 添加秒杀嘞应用
 
 
 

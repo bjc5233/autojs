@@ -18,7 +18,7 @@ robot.clickTextCenter("签到");
 sleep(5000);
 robot.clickDescCenter("签到领钢镚");
 sleep(3000);
-robot.click(955, 915); //签到成功弹窗关闭
+robot.click(950, 828); //签到成功弹窗关闭 TODO检查下，有未成功状态
 sleep(1000);
 robot.click(980, 1850); //进入"双签领京豆"
 sleep(4000);

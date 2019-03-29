@@ -33,5 +33,25 @@ signStrs.forEach(function (str) {
     }
 });
 
+
+//找云钻
+requestScreenCapture();
+for (let i = 0; i < 3; i++) {
+    let starEnterImg = images.read("resources/苏宁易购-签到-找云钻.png");
+    let starEnterPos = findImage(robot.getCaptureImg(), starEnterImg, {threshold: 0.6});
+    if (starEnterPos) {
+        robot.click(starEnterPos.x + starEnterImg.getWidth()/2, starEnterPos.y + starEnterImg.getHeight()/2);
+        sleep(6000);
+        robot.back();
+        sleep(3000);
+        let starImg = images.read("resources/苏宁易购-签到-云钻.png");
+        let p = findImage(robot.getCaptureImg(), starImg, {threshold: 0.6});
+        if (starPos) {
+            sleep(1000)
+            robot.click(starPos.x + starImg.getWidth()/2, starPos.y + starImg.getHeight()/2);
+        }
+    }
+}
+
 robot.kill("com.suning.mobile.ebuy");
 robot.after();

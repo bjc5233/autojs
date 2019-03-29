@@ -15,6 +15,29 @@ robot.shell("am broadcast -a com.jozein.xedgepro.PERFORM -e data 438302433402730
 waitForActivity("com.tencent.server.fore.StandardActivity");
 sleep(4000);
 robot.clickIdCenter("aqt"); //签到按钮
+
+
+// 阅读n篇资讯
+robot.clickNTextCenter("去完成", 3);
+for (let i = 0; i < 3; i++) {
+    sleep(4000);
+    robot.clickIdCenter("gl"); // 每次版本更新可能变更, 注意下
+    sleep(3000);
+    robot.clickTextCenter("阅读全文");
+    robot.pageDown(4, 1000);
+    robot.back();
+    sleep(2000);
+    if (textMatches(".*WiFi增强包.*").exists()) { // 弹窗关闭
+        robot.click(556, 1600);
+    }
+    robot.clickTextCenter("刷新");
+}
 sleep(2000);
+robot.clickTextCenter("我的");
+sleep(1000);
+robot.clickTextCenter("领取");
+
+
+sleep(4000);
 robot.kill("com.tencent.wifimanager");
 robot.after();

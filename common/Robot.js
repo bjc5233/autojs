@@ -66,12 +66,54 @@ function Robot() {
     };
 
 
+    // index表示第几个文字, 从1开始
+    this.clickNTextCenter = function (str, index) {
+        if (!str)
+            return false;
+        let widgets = text(str).find();
+        if (!widgets)
+            return false;
 
+        index --
+        for (let i = 0; i < widgets.length; i++) {
+            let widget = widgets[i];
+            if (i == index)
+                return this.clickCenter(widget);
+            else
+                continue;
+        }
+        return false;
+    };
+
+
+    this.pageUp = (counter, time) => {
+        if (counter && time) {
+            for (let i = 0; i < counter; i++) {
+                scrollUp();
+                sleep(time);
+            }
+        } else {
+            scrollUp();
+        }
+    };
+    this.pageDown = (counter, time) => {
+        if (counter && time) {
+            for (let i = 0; i < counter; i++) {
+                scrollDown();
+                sleep(time);
+            }
+        } else {
+            scrollDown();
+        }
+    };
     this.swipe = function (x1, y1, x2, y2, duration) {
         swipe(x1, y1, x2, y2, duration);
     };
     this.back = function () {
         Back();
+    };
+    this.home = function () {
+        home();
     };
     this.shell = function (command) {
         shell(command, true);
@@ -100,6 +142,17 @@ function Robot() {
         toast("结束执行[" + source + "]...");
         exit();
     };
+
+
+    this.getCaptureImg = () => {
+        var img = captureScreen();
+        if (!img || typeof(img) == "undifined") {
+            console.log("截图失败,退出脚本");
+            exit();
+        } else {
+            return img;
+        }
+    }
 }
 
 module.exports = Robot;

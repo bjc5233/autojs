@@ -1,3 +1,4 @@
+// TODO 考虑与打卡合并
 auto.waitFor();
 var Robot = require("./common/Robot.js");
 var robot = new Robot();
