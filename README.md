@@ -32,7 +32,8 @@
 am start -n org.autojs.autojs/.external.open.RunIntentActivity -d file:///storage/emulated/0/脚本/大众点评-签到.js -t text/javascript
 ```
 3. autojs自带定时功能可靠性较差，因此使用tasker处理[autojs.prj.xml]
-4. 编写代码注意[代码尽量全在PC端vscode中编写，使用ftp同步到手机端]
+4. 编写代码注意[代码尽量全在PC端vscode中编写，使用xftp软件同步到手机端]
+5. 对于无法通过id\text\desc找到控件的, 使用找图方式
 
 
 
@@ -40,7 +41,8 @@ am start -n org.autojs.autojs/.external.open.RunIntentActivity -d file:///storag
 
 ### TODO
 1. 添加早起打卡类应用
-2. 添加秒杀嘞应用
+2. 添加秒杀类应用
+3. click(posX, posY) ==> 截图找图定位
 
 
 

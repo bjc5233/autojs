@@ -18,6 +18,7 @@ robot.clickIdCenter("aqt"); //签到按钮
 
 
 // 阅读n篇资讯
+sleep(3000);
 robot.clickNTextCenter("去完成", 3);
 for (let i = 0; i < 3; i++) {
     sleep(4000);

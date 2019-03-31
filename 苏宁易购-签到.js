@@ -43,9 +43,9 @@ for (let i = 0; i < 3; i++) {
         robot.click(starEnterPos.x + starEnterImg.getWidth()/2, starEnterPos.y + starEnterImg.getHeight()/2);
         sleep(6000);
         robot.back();
-        sleep(3000);
+        sleep(6000);
         let starImg = images.read("resources/苏宁易购-签到-云钻.png");
-        let p = findImage(robot.getCaptureImg(), starImg, {threshold: 0.6});
+        let starPos = findImage(robot.getCaptureImg(), starImg, {threshold: 0.6});
         if (starPos) {
             sleep(1000)
             robot.click(starPos.x + starImg.getWidth()/2, starPos.y + starImg.getHeight()/2);
