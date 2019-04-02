@@ -1,28 +1,26 @@
 auto.waitFor();
-var Robot = require("./common/Robot.js");
-var robot = new Robot();
+var Maid = require("./common/Maid.js");
+var maid = new Maid("com.unionpay");
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
-robot.before();
-
+maid.before();
 unlock.unlock();
-sleep(2000);
+maid.sleep(2);
 
 
-robot.kill("com.unionpay");
-sleep(2000);
-launch("com.unionpay");
-waitForActivity("com.unionpay.activity.UPActivityMain")
-sleep(5000)
+maid.kill();
+maid.sleep(2);
+maid.launchActivity("com.unionpay.activity.UPActivityMain");
+maid.sleep(5);
 //进入签到页按钮
 if (id("frog_float_gif").exists()) {
-    robot.clickIdCenter("frog_float_gif"); //进入签到页按钮
-    sleep(2000);
+    maid.clickIdCenter("frog_float_gif"); //进入签到页按钮
+    maid.sleep(2);
 } else {
-    robot.kill("com.unionpay");
+    maid.kill();
     exit();   
 }
-robot.clickTextCenter("签到"); //签到按钮
-sleep(2000);
-robot.kill("com.unionpay");
-robot.after();
+maid.clickTextCenter("签到"); //签到按钮
+maid.sleep(2);
+maid.kill();
+maid.after();

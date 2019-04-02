@@ -1,23 +1,21 @@
 auto.waitFor();
-var Robot = require("./common/Robot.js");
-var robot = new Robot();
+var Maid = require("./common/Maid.js");
+var maid = new Maid("com.taobao.trip");
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
-robot.before();
-
+maid.before();
 unlock.unlock();
-sleep(2000);
+maid.sleep(2);
 
 
 
-robot.kill("com.taobao.trip");
-sleep(2000);
-launch("com.taobao.trip");
-waitForActivity("com.taobao.trip.home.HomeActivity")
-sleep(5000);
-robot.clickRegTextCenter("\\+\\d+里程"); //进入签到页按钮
-sleep(4000);
-robot.clickRegDescCenter("签到\\+\\d+里程");
-sleep(2000);
-robot.kill("com.taobao.trip");
-robot.after();
+maid.kill();
+maid.sleep(2);
+maid.launchActivity("com.taobao.trip.home.HomeActivity");
+maid.sleep(5);
+maid.clickRegTextCenter("\\+\\d+里程"); //进入签到页按钮
+maid.sleep(4);
+maid.clickRegDescCenter("签到\\+\\d+里程");
+maid.sleep(2);
+maid.kill();
+maid.after();

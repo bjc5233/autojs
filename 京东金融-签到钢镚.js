@@ -1,31 +1,30 @@
 auto.waitFor();
-var Robot = require("./common/Robot.js");
-var robot = new Robot();
+var Maid = require("./common/Maid.js");
+var maid = new Maid("com.jd.jrapp");
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
-robot.before();
-
+maid.before();
 unlock.unlock();
-sleep(2000);
+maid.sleep(2);
 
 
-robot.kill("com.jd.jrapp");
-sleep(2000);
-robot.shell("am broadcast -a com.jozein.xedgepro.PERFORM -e data 43830233030236F6D6E2A646E2A6271607070236F6D6E2A646E2A627160707E2D61696E6E2163636F657E647E2D656E25796E2D41696E6D456143647966796479702165747F6A637D25254435224145214345254435224835293345254935283735293135254835293545283440206020602");
+maid.kill();
+maid.sleep(2);
+maid.shell("am broadcast -a com.jozein.xedgepro.PERFORM -e data 43830233030236F6D6E2A646E2A6271607070236F6D6E2A646E2A627160707E2D61696E6E2163636F657E647E2D656E25796E2D41696E6D456143647966796479702165747F6A637D25254435224145214345254435224835293345254935283735293135254835293545283440206020602");
 waitForActivity("com.jd.jrapp.main.account.me.ui.MainMeActivity");
-sleep(5000);
-robot.clickTextCenter("签到");
-sleep(5000);
-robot.clickDescCenter("签到领钢镚");
-sleep(3000);
-robot.click(950, 828); //签到成功弹窗关闭 TODO检查下，有未成功状态
-sleep(1000);
-robot.click(980, 1850); //进入"双签领京豆"
-sleep(4000);
-robot.clickDescCenter("完成双签领取");
-sleep(2000);
-robot.clickDescCenter("立即领取");
-sleep(2000);
+maid.sleep(5);
+maid.clickTextCenter("签到");
+maid.sleep(5);
+maid.clickDescCenter("签到领钢镚");
+maid.sleep(3);
+maid.click(950, 828); //签到成功弹窗关闭 TODO检查下，有未成功状态
+maid.sleep(1);
+maid.click(980, 1850); //进入"双签领京豆"
+maid.sleep(4);
+maid.clickDescCenter("完成双签领取");
+maid.sleep(2);
+maid.clickDescCenter("立即领取");
+maid.sleep(2);
 
-robot.kill("com.jd.jrapp");
-robot.after();
+maid.kill();
+maid.after();

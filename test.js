@@ -1,24 +1,14 @@
 auto.waitFor();
-var Robot = require("./common/Robot.js");
-var robot = new Robot();
+var Maid = require("./common/Maid.js");
+var maid = new Maid();
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
-robot.before(true);
+maid.before(true);
 unlock.unlock();
 // ==================================================
-requestScreenCapture()
 
-let templateImg = images.read("resources/苏宁易购-签到-找云钻.png");
-let img = robot.getCaptureImg();
-let p = findImage(img, templateImg, {threshold: 0.6})
-console.log(p)
-if (p) {
-    sleep(1000)
-    robot.click(p.x + templateImg.getWidth()/2, p.y + templateImg.getHeight()/2);
-}
-
-
+toast(getAppName("com.tencent.mm2"));
 
 // ==================================================
-sleep(1000);
-robot.after();
+maid.sleep(1);
+maid.after();

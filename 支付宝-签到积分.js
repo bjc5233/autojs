@@ -1,33 +1,32 @@
 auto.waitFor();
-var Robot = require("./common/Robot.js");
-var robot = new Robot();
+var Maid = require("./common/Maid.js");
+var maid = new Maid("com.eg.android.AlipayGphone");
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
-robot.before();
+maid.before();
 
 unlock.unlock();
-sleep(2000);
+maid.sleep(2);
 
 
-robot.kill("com.eg.android.AlipayGphone");
-sleep(2000);
-launch("com.eg.android.AlipayGphone");
-waitForActivity("com.eg.android.AlipayGphone.AlipayLogin")
-sleep(5000);
-robot.clickTextCenter("我的");
-sleep(4000);
-robot.clickTextCenter("支付宝会员");
-sleep(4000);
+maid.kill();
+maid.sleep(2);
+maid.launchActivity("com.eg.android.AlipayGphone.AlipayLogin");
+maid.sleep(5);
+maid.clickTextCenter("我的");
+maid.sleep(4);
+maid.clickTextCenter("支付宝会员");
+maid.sleep(4);
 if (desc("弹屏").exists()) {
-    robot.clickDescCenter("关闭"); // 支付宝会员日弹窗
-    sleep(1000);
+    maid.clickDescCenter("关闭"); // 支付宝会员日弹窗
+    maid.sleep(1);
 }
-robot.clickDescCenter("领积分");
-sleep(4000);
+maid.clickDescCenter("领积分");
+maid.sleep(4);
 while (desc("点击领取").exists()) {
-    robot.clickDescCenter("点击领取");
-    sleep(6000);
+    maid.clickDescCenter("点击领取");
+    maid.sleep(6);
 }
 
-robot.kill("com.eg.android.AlipayGphone");
-robot.after();
+maid.kill();
+maid.after();

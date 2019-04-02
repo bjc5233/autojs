@@ -1,4 +1,11 @@
-function Robot() {
+function Maid(packageName) {
+
+    this.packageName = packageName;
+    if (packageName && !getAppName(packageName)) {
+        toast("找不到此应用, 无法提供服务");
+        this.sleep(1000);
+        exit();
+    }
 
     this.click = function (x, y) {
         return click(x, y);
@@ -18,7 +25,7 @@ function Robot() {
     this.clickMulti = function (points, interval) {
         points.forEach(function (point) {
             this.click(point[0], point[1]);
-            sleep(interval);
+            this.sleep(interval);
         }.bind(this));
     };
 
@@ -90,7 +97,7 @@ function Robot() {
         if (counter && time) {
             for (let i = 0; i < counter; i++) {
                 scrollUp();
-                sleep(time);
+                this.sleep(time);
             }
         } else {
             scrollUp();
@@ -100,7 +107,7 @@ function Robot() {
         if (counter && time) {
             for (let i = 0; i < counter; i++) {
                 scrollDown();
-                sleep(time);
+                this.sleep(time);
             }
         } else {
             scrollDown();
@@ -109,8 +116,11 @@ function Robot() {
     this.swipe = function (x1, y1, x2, y2, duration) {
         swipe(x1, y1, x2, y2, duration);
     };
+    this.sleep = (second) => {
+        sleep(second * 1000);
+    };
     this.back = function () {
-        Back();
+        back();
     };
     this.home = function () {
         home();
@@ -118,12 +128,15 @@ function Robot() {
     this.shell = function (command) {
         shell(command, true);
     };
-    this.launchActivity = function (packageName, activityName) {
-        shell("am start -n " + packageName + "/" + activityName, true);
+    this.launch = function () {
+        launch(this.packageName);
+    };
+    this.launchActivity = function (activityName) {
+        shell("am start -n " + this.packageName + "/" + activityName, true);
         waitForActivity(activityName);
     };
-    this.kill = function (packageName) {
-        shell("am force-stop " + packageName, true);
+    this.kill = function () {
+        shell("am force-stop " + this.packageName, true);
     };
     this.before = function (ignoreSleep) {
         let source = engines.myEngine().source.toString();
@@ -134,7 +147,7 @@ function Robot() {
         const HEIGHT = Math.max(device.width, device.height);
         setScreenMetrics(WIDTH, HEIGHT);
         if (!ignoreSleep)
-            sleep(random() * 10000); //随机睡眠[0-10]秒, 使签到\打卡时间不固定
+            this.sleep(random() * 10); //随机睡眠[0-10]秒, 使签到\打卡时间不固定
     };
     this.after = function () {
         let source = engines.myEngine().source.toString();
@@ -155,4 +168,4 @@ function Robot() {
     }
 }
 
-module.exports = Robot;
+module.exports = Maid;

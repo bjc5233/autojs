@@ -3,7 +3,7 @@ function Unlock(){
     this.unlock = function () {
         if (device.isScreenOn()) {
             return
-          }
+        }
         
         //点亮屏幕
         device.wakeUp();

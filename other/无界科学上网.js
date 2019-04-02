@@ -1,12 +1,9 @@
 auto.waitFor();
-var Robot = require("../common/Robot.js");
-var robot = new Robot();
-var Unlock = require("../common/Unlock.js");
-var unlock = new Unlock();
-robot.before(true);
+var Maid = require("../common/Maid.js");
+var maid = new Maid("us.ultrasurf.mobile.ultrasurf");
+maid.before(true);
 
-launch("us.ultrasurf.mobile.ultrasurf");
-waitForActivity("us.ultrasurf.mobile.ultrasurf.MainActivity");
-sleep(200);
-robot.clickIdCenter("mySwitch");
-robot.after();
+maid.launchActivity("us.ultrasurf.mobile.ultrasurf.MainActivity");
+maid.sleep(0.2);
+maid.clickIdCenter("mySwitch");
+maid.after();

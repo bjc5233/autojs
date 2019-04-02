@@ -41,9 +41,10 @@ am start -n org.autojs.autojs/.external.open.RunIntentActivity -d file:///storag
 
 ### TODO
 1. 添加早起打卡类应用
-2. 添加秒杀类应用
-3. click(posX, posY) ==> 截图找图定位
-
+2. 添加秒杀类应用(例如京东话费券，具体领券页面需要参考"券老大""券妈妈"等APP )
+3. click(posX, posY)等点击位置写死的 ==> 截图找图定位
+4. 当指定控件\文字\id不存在时，后续的延时操作取消
+5. 分享到微信"文件传输助手"创建单独方法便于调用
 
 
 

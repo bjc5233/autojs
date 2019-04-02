@@ -1,26 +1,24 @@
 auto.waitFor();
-var Robot = require("./common/Robot.js");
-var robot = new Robot();
+var Maid = require("./common/Maid.js");
+var maid = new Maid("com.smzdm.client.android");
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
-robot.before();
-
+maid.before();
 unlock.unlock();
-sleep(2000);
+maid.sleep(2);
 
-robot.kill("com.smzdm.client.android");
-sleep(2000);
-launch("com.smzdm.client.android");
-waitForActivity("com.smzdm.client.android.activity.HomeActivity");
-sleep(5000);
+maid.kill();
+maid.sleep(2);
+maid.launchActivity("com.smzdm.client.android.activity.HomeActivity");
+maid.sleep(5);
 if (id("iv_content_cancel").exists()) {
-    robot.clickIdCenter("iv_content_cancel"); //app更新弹出框
-    sleep(1000);
+    maid.clickIdCenter("iv_content_cancel"); //app更新弹出框
+    maid.sleep(1);
 }
 
-robot.clickTextCenter("我的"); //进入我的页面按钮
-sleep(4000);
-robot.clickTextCenter("签到"); //签到按钮
-sleep(2000);
-robot.kill("com.smzdm.client.android");
-robot.after();
+maid.clickTextCenter("我的"); //进入我的页面按钮
+maid.sleep(4);
+maid.clickTextCenter("签到"); //签到按钮
+maid.sleep(2);
+maid.kill();
+maid.after();
