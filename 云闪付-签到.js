@@ -10,9 +10,13 @@ maid.sleep(2);
 
 maid.kill();
 maid.sleep(2);
-maid.launchActivity("com.unionpay.activity.UPActivityMain");
+maid.launch();
+maid.waitForActivity("com.unionpay.activity.UPActivityMain");
 maid.sleep(5);
-//进入签到页按钮
+if (id("btn_cancel").exists()) {
+    maid.clickIdCenter("btn_cancel"); // 关闭更新弹窗
+    maid.sleep(2);
+}
 if (id("frog_float_gif").exists()) {
     maid.clickIdCenter("frog_float_gif"); //进入签到页按钮
     maid.sleep(2);

@@ -16,6 +16,10 @@ if (id("btn_alert_negative").exists()) {
     maid.clickIdCenter("btn_alert_negative"); //app更新弹出框
     maid.sleep(1);
 }
+if (id("iv_trans_cancel_icon").exists()) {
+    maid.clickIdCenter("iv_trans_cancel_icon"); //广告\活动弹出框
+    maid.sleep(1);
+}
 maid.clickSelectorCenter(id("txt_mainpage_tab_title").text("个人"));
 maid.sleep(4);
 maid.clickIdCenter("user_points");

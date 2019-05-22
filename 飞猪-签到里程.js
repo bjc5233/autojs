@@ -11,7 +11,8 @@ maid.sleep(2);
 
 maid.kill();
 maid.sleep(2);
-maid.launchActivity("com.taobao.trip.home.HomeActivity");
+maid.launch();
+maid.waitForActivity("com.taobao.trip.home.HomeActivity");
 maid.sleep(5);
 maid.clickRegTextCenter("\\+\\d+里程"); //进入签到页按钮
 maid.sleep(4);

@@ -1,6 +1,6 @@
 auto.waitFor();
 var Maid = require("./common/Maid.js");
-var maid = new Maid();
+var maid = new Maid("com.wuba");
 var Unlock = require("./common/Unlock.js");
 var unlock = new Unlock();
 maid.before();
@@ -19,7 +19,7 @@ maid.sleep(2);
 maid.clickTextCenter("打卡");
 maid.sleep(2);
 maid.clickTextCenter("close"); // 打卡成功弹窗关闭
-maid.sleep(4);
+maid.sleep(2);
 maid.clickTextCenter("积极\n参与"); //继续支付0.01g矿石参与早起打卡
 maid.sleep(2);
 maid.clickTextCenter("立即\n参与"); //继续支付0.01g矿石参与早起打卡
@@ -59,7 +59,8 @@ maid.kill();
 
 //========================= 分享帖子 - 查看 =========================
 maid.sleep(2);
-maid.launchActivity("com.tencent.mm", "com.tencent.mm.plugin.fts.ui.FTSMainUI"); //微信搜索
+maid = new Maid("com.tencent.mm");
+maid.launchActivity("com.tencent.mm.plugin.fts.ui.FTSMainUI"); //微信搜索
 className("android.widget.EditText").text("搜索").setText("文件传输助手");
 maid.sleep(1);
 maid.clickSelectorCenter(className("android.widget.TextView").text("文件传输助手"));//进入[文件传输助手]

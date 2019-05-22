@@ -131,6 +131,9 @@ function Maid(packageName) {
     this.launch = function () {
         launch(this.packageName);
     };
+    this.waitForActivity = function (activityName) {
+        waitForActivity(activityName);
+    };
     this.launchActivity = function (activityName) {
         shell("am start -n " + this.packageName + "/" + activityName, true);
         waitForActivity(activityName);

@@ -2,7 +2,7 @@
 	<Profile sr="prof127" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552539991165</edate>
+		<edate>1553125112943</edate>
 		<id>127</id>
 		<mid0>128</mid0>
 		<nme>autojs任务提醒</nme>
@@ -16,7 +16,7 @@
 	<Profile sr="prof154" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552538767206</edate>
+		<edate>1553099137975</edate>
 		<id>154</id>
 		<mid0>158</mid0>
 		<nme>autojs云闪付-签到</nme>
@@ -44,7 +44,7 @@
 	<Profile sr="prof181" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552538870571</edate>
+		<edate>1552617690946</edate>
 		<id>181</id>
 		<mid0>162</mid0>
 		<nme>autojs叮咚买菜-签到</nme>
@@ -58,35 +58,35 @@
 	<Profile sr="prof182" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552538924502</edate>
+		<edate>1553876149972</edate>
 		<id>182</id>
 		<mid0>163</mid0>
 		<nme>autojs大众点评-签到</nme>
 		<Time sr="con0">
 			<fh>0</fh>
-			<fm>11</fm>
+			<fm>10</fm>
 			<th>0</th>
-			<tm>11</tm>
+			<tm>10</tm>
 		</Time>
 	</Profile>
 	<Profile sr="prof187" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552538941033</edate>
+		<edate>1553272462375</edate>
 		<id>187</id>
 		<mid0>164</mid0>
 		<nme>autojs拼多多-签到</nme>
 		<Time sr="con0">
 			<fh>0</fh>
-			<fm>14</fm>
+			<fm>12</fm>
 			<th>0</th>
-			<tm>14</tm>
+			<tm>12</tm>
 		</Time>
 	</Profile>
 	<Profile sr="prof188" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552538977868</edate>
+		<edate>1553271864547</edate>
 		<id>188</id>
 		<mid0>172</mid0>
 		<nme>autojs苏宁易购-签到</nme>
@@ -100,7 +100,7 @@
 	<Profile sr="prof189" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552539011028</edate>
+		<edate>1553271933760</edate>
 		<id>189</id>
 		<mid0>165</mid0>
 		<nme>autojs支付宝-签到积分</nme>
@@ -156,7 +156,7 @@
 	<Profile sr="prof193" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552539146788</edate>
+		<edate>1553770002938</edate>
 		<id>193</id>
 		<mid0>160</mid0>
 		<nme>autojs京东金融-签到钢镚</nme>
@@ -169,30 +169,15 @@
 	</Profile>
 	<Profile sr="prof194" ve="2">
 		<cdate>1552499418518</cdate>
-		<clp>true</clp>
-		<edate>1552539273223</edate>
+		<edate>1554297452491</edate>
 		<id>194</id>
-		<mid0>176</mid0>
-		<nme>autojs京东金融-早起-打卡</nme>
+		<mid0>199</mid0>
+		<nme>autojs百度地图-签到</nme>
 		<Time sr="con0">
-			<fh>5</fh>
-			<fm>30</fm>
-			<th>5</th>
-			<tm>30</tm>
-		</Time>
-	</Profile>
-	<Profile sr="prof199" ve="2">
-		<cdate>1552499418518</cdate>
-		<clp>true</clp>
-		<edate>1552539283234</edate>
-		<id>199</id>
-		<mid0>176</mid0>
-		<nme>autojs京东金融-早起-付款</nme>
-		<Time sr="con0">
-			<fh>5</fh>
-			<fm>40</fm>
-			<th>5</th>
-			<tm>40</tm>
+			<fh>0</fh>
+			<fm>50</fm>
+			<th>0</th>
+			<tm>50</tm>
 		</Time>
 	</Profile>
 	<Profile sr="prof202" ve="2">
@@ -212,10 +197,24 @@
 	<Profile sr="prof203" ve="2">
 		<cdate>1552499418518</cdate>
 		<clp>true</clp>
-		<edate>1552539414879</edate>
+		<edate>1553770101016</edate>
 		<id>203</id>
 		<mid0>179</mid0>
 		<nme>autojs上海移动和你-签到兑换</nme>
+		<Time sr="con0">
+			<fh>0</fh>
+			<fm>42</fm>
+			<th>0</th>
+			<tm>42</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof207" ve="2">
+		<cdate>1552499418518</cdate>
+		<clp>true</clp>
+		<edate>1553057775304</edate>
+		<id>207</id>
+		<mid0>208</mid0>
+		<nme>autojs腾讯wifi管家-签到</nme>
 		<Time sr="con0">
 			<fh>0</fh>
 			<fm>36</fm>
@@ -223,19 +222,94 @@
 			<tm>36</tm>
 		</Time>
 	</Profile>
+	<Profile sr="prof210" ve="2">
+		<cdate>1552499418518</cdate>
+		<clp>true</clp>
+		<edate>1554239081716</edate>
+		<id>210</id>
+		<mid0>211</mid0>
+		<nme>autojs58同城-挖矿</nme>
+		<Time sr="con0">
+			<fh>5</fh>
+			<fm>1</fm>
+			<th>5</th>
+			<tm>1</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof212" ve="2">
+		<cdate>1552499418518</cdate>
+		<clp>true</clp>
+		<edate>1554297424302</edate>
+		<id>212</id>
+		<limit>true</limit>
+		<mid0>128</mid0>
+		<nme>autojs任务提醒2</nme>
+		<Time sr="con0">
+			<fh>4</fh>
+			<fm>58</fm>
+			<th>4</th>
+			<tm>58</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof214" ve="2">
+		<cdate>1552499418518</cdate>
+		<clp>true</clp>
+		<edate>1553770065907</edate>
+		<id>214</id>
+		<mid0>215</mid0>
+		<nme>autojs联想-签到延保</nme>
+		<Time sr="con0">
+			<fh>0</fh>
+			<fm>39</fm>
+			<th>0</th>
+			<tm>39</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof216" ve="2">
+		<cdate>1552499418518</cdate>
+		<edate>1554181596619</edate>
+		<id>216</id>
+		<mid0>217</mid0>
+		<nme>autojs网易严选-签到</nme>
+		<Time sr="con0">
+			<fh>0</fh>
+			<fm>46</fm>
+			<th>0</th>
+			<tm>46</tm>
+		</Time>
+	</Profile>
 	<Project sr="proj0" ve="2">
 		<cdate>1552499380205</cdate>
 		<name>autojs</name>
-		<pids>188,191,194,199,189,180,192,202,190,187,193,182,127,154,181,203</pids>
-		<tids>161,179,160,163,177,128,172,162,165,164,158,175,178,176,168,159</tids>
+		<pids>203,181,190,202,127,216,154,212,187,189,180,214,192,188,210,193,194,207,191,182</pids>
+		<tids>176,158,215,165,208,179,175,163,160,209,128,159,217,168,211,177,164,178,161,199,162,213,172</tids>
 	</Project>
 	<Task sr="task128">
 		<cdate>1552499456053</cdate>
-		<edate>1552538511491</edate>
+		<edate>1553125112943</edate>
 		<id>128</id>
 		<nme>autojs任务提醒</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>org.autojs.autojs.ui.splash.SplashActivity_</appClass>
+				<appPkg>org.autojs.autojs</appPkg>
+				<label>Auto.js</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -256,7 +330,7 @@
 	</Task>
 	<Task sr="task158">
 		<cdate>1552499456053</cdate>
-		<edate>1552538041679</edate>
+		<edate>1553099137974</edate>
 		<id>158</id>
 		<nme>autojs云闪付-签到</nme>
 		<pri>100</pri>
@@ -284,7 +358,7 @@
 		<edate>1552538049673</edate>
 		<id>159</id>
 		<nme>autojs京东-签到京豆</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -306,7 +380,7 @@
 	</Task>
 	<Task sr="task160">
 		<cdate>1552499456053</cdate>
-		<edate>1552538143590</edate>
+		<edate>1553770002938</edate>
 		<id>160</id>
 		<nme>autojs京东金融-签到钢镚</nme>
 		<pri>100</pri>
@@ -334,7 +408,7 @@
 		<edate>1552538870571</edate>
 		<id>161</id>
 		<nme>autojs什么值得买-签到</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -356,10 +430,10 @@
 	</Task>
 	<Task sr="task162">
 		<cdate>1552499456053</cdate>
-		<edate>1552538076082</edate>
+		<edate>1553876136555</edate>
 		<id>162</id>
 		<nme>autojs叮咚买菜-签到</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -381,7 +455,7 @@
 	</Task>
 	<Task sr="task163">
 		<cdate>1552499456053</cdate>
-		<edate>1552538086822</edate>
+		<edate>1553271770470</edate>
 		<id>163</id>
 		<nme>autojs大众点评-签到</nme>
 		<pri>100</pri>
@@ -406,10 +480,10 @@
 	</Task>
 	<Task sr="task164">
 		<cdate>1552499456053</cdate>
-		<edate>1552538977868</edate>
+		<edate>1553272462375</edate>
 		<id>164</id>
 		<nme>autojs拼多多-签到</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -431,7 +505,7 @@
 	</Task>
 	<Task sr="task165">
 		<cdate>1552499456053</cdate>
-		<edate>1552538102906</edate>
+		<edate>1553271933760</edate>
 		<id>165</id>
 		<nme>autojs支付宝-签到积分</nme>
 		<pri>100</pri>
@@ -459,7 +533,7 @@
 		<edate>1552538110272</edate>
 		<id>168</id>
 		<nme>autojs淘宝-淘金币</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -481,7 +555,7 @@
 	</Task>
 	<Task sr="task172">
 		<cdate>1552499456053</cdate>
-		<edate>1552538126491</edate>
+		<edate>1553271864547</edate>
 		<id>172</id>
 		<nme>autojs苏宁易购-签到</nme>
 		<pri>100</pri>
@@ -509,7 +583,7 @@
 		<edate>1552538132633</edate>
 		<id>175</id>
 		<nme>autojs飞猪-签到里程</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -531,7 +605,7 @@
 	</Task>
 	<Task sr="task176">
 		<cdate>1552499456053</cdate>
-		<edate>1552538150267</edate>
+		<edate>1554239026934</edate>
 		<id>176</id>
 		<nme>autojs京东金融-早起-打卡</nme>
 		<pri>100</pri>
@@ -556,7 +630,7 @@
 	</Task>
 	<Task sr="task177">
 		<cdate>1552499456053</cdate>
-		<edate>1552538156071</edate>
+		<edate>1554239042463</edate>
 		<id>177</id>
 		<nme>autojs京东金融-早起-付款</nme>
 		<pri>100</pri>
@@ -584,7 +658,7 @@
 		<edate>1552538709635</edate>
 		<id>178</id>
 		<nme>autojs上海移动和你-签到</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -606,10 +680,10 @@
 	</Task>
 	<Task sr="task179">
 		<cdate>1552499456053</cdate>
-		<edate>1552538171217</edate>
+		<edate>1554181596619</edate>
 		<id>179</id>
 		<nme>autojs上海移动和你-签到兑换</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>297358436</code>
 			<Bundle sr="arg0">
@@ -619,6 +693,174 @@
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
 					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
 					<path>/storage/emulated/0/脚本/上海移动和你-签到兑换.js</path>
+					<path-type>java.lang.String</path-type>
+					<script>&lt;null&gt;</script>
+					<script-type>java.lang.String</script-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.autojs.autojs</Str>
+			<Str sr="arg2" ve="3">org.autojs.autojs.external.tasker.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task199">
+		<cdate>1552499456053</cdate>
+		<edate>1554297485544</edate>
+		<id>199</id>
+		<nme>autojs百度地图-签到</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>297358436</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>/storage/emulated/0/脚本/百度地图-签到.js</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<path>/storage/emulated/0/脚本/百度地图-签到.js</path>
+					<path-type>java.lang.String</path-type>
+					<script>&lt;null&gt;</script>
+					<script-type>java.lang.String</script-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.autojs.autojs</Str>
+			<Str sr="arg2" ve="3">org.autojs.autojs.external.tasker.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task208">
+		<cdate>1552499456053</cdate>
+		<edate>1553057775304</edate>
+		<id>208</id>
+		<nme>autojs腾讯wifi管家-签到</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>297358436</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>/storage/emulated/0/脚本/腾讯wifi管家-签到.js</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<path>/storage/emulated/0/脚本/腾讯wifi管家-签到.js</path>
+					<path-type>java.lang.String</path-type>
+					<script>&lt;null&gt;</script>
+					<script-type>java.lang.String</script-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.autojs.autojs</Str>
+			<Str sr="arg2" ve="3">org.autojs.autojs.external.tasker.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task209">
+		<cdate>1552499456053</cdate>
+		<edate>1553770162815</edate>
+		<id>209</id>
+		<nme>autojs闲鱼-签到闲鱼币</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>297358436</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>/storage/emulated/0/脚本/腾讯wifi管家-签到.js</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<path>/storage/emulated/0/脚本/腾讯wifi管家-签到.js</path>
+					<path-type>java.lang.String</path-type>
+					<script>&lt;null&gt;</script>
+					<script-type>java.lang.String</script-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.autojs.autojs</Str>
+			<Str sr="arg2" ve="3">org.autojs.autojs.external.tasker.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task211">
+		<cdate>1552499456053</cdate>
+		<edate>1553381763122</edate>
+		<id>211</id>
+		<nme>autojs58同城-挖矿</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>297358436</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>/storage/emulated/0/脚本/58同城-挖矿.js</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<path>/storage/emulated/0/脚本/58同城-挖矿.js</path>
+					<path-type>java.lang.String</path-type>
+					<script>&lt;null&gt;</script>
+					<script-type>java.lang.String</script-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.autojs.autojs</Str>
+			<Str sr="arg2" ve="3">org.autojs.autojs.external.tasker.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task213">
+		<cdate>1552499456053</cdate>
+		<edate>1553381978142</edate>
+		<id>213</id>
+		<nme>autojs任务提醒2</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>org.autojs.autojs.ui.splash.SplashActivity_</appClass>
+				<appPkg>org.autojs.autojs</appPkg>
+				<label>Auto.js</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task215">
+		<cdate>1552499456053</cdate>
+		<edate>1553770141848</edate>
+		<id>215</id>
+		<nme>autojs联想-签到延保</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>297358436</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>/storage/emulated/0/脚本/联想-签到延保.js</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<path>/storage/emulated/0/脚本/联想-签到延保.js</path>
+					<path-type>java.lang.String</path-type>
+					<script>&lt;null&gt;</script>
+					<script-type>java.lang.String</script-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.autojs.autojs</Str>
+			<Str sr="arg2" ve="3">org.autojs.autojs.external.tasker.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task217">
+		<cdate>1552499456053</cdate>
+		<edate>1554181591137</edate>
+		<id>217</id>
+		<nme>autojs网易严选-签到</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>297358436</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>/storage/emulated/0/脚本/网易严选-签到.js</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<path>/storage/emulated/0/脚本/网易严选-签到.js</path>
 					<path-type>java.lang.String</path-type>
 					<script>&lt;null&gt;</script>
 					<script-type>java.lang.String</script-type>

@@ -13,6 +13,10 @@ maid.kill();
 maid.sleep(2);
 maid.launchActivity("com.eg.android.AlipayGphone.AlipayLogin");
 maid.sleep(5);
+if (id("update_cancel_tv").exists()) { // 关闭更新弹窗
+    maid.clickIdCenter("update_cancel_tv");
+    maid.sleep(2);
+}
 maid.clickTextCenter("体育服务");
 maid.sleep(4);
 maid.clickDescCenter("早起打卡 早起有红包");

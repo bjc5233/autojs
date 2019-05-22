@@ -13,13 +13,20 @@ maid.kill();
 maid.sleep(2);
 maid.launchActivity("com.xunmeng.pinduoduo.ui.activity.HomeActivity");
 maid.sleep(5);
-
 if (id("h_").exists()) {
     maid.clickIdCenter("h_"); //有时有广告弹窗，需要关闭
     maid.sleep(1);
 }
 if (id("i_").exists()) {
     maid.clickIdCenter("i_"); //有时有广告弹窗，需要关闭
+    maid.sleep(1);
+}
+if (id("ii").exists()) {
+    maid.clickIdCenter("ii"); //有时有广告弹窗，需要关闭
+    maid.sleep(1);
+}
+if (id("is").exists()) {
+    maid.clickIdCenter("is"); //有时有广告弹窗，需要关闭
     maid.sleep(1);
 }
 maid.clickTextCenter("现金签到"); //进入签到页按钮

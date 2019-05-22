@@ -16,8 +16,8 @@ maid.sleep(4);
 maid.clickIdCenter("aqt"); //签到按钮
 
 
-// 阅读n篇资讯
-maid.sleep(6);
+// 阅读2篇资讯
+maid.sleep(7);
 maid.clickNTextCenter("去完成", 3);
 for (let i = 0; i < 3; i++) {
     maid.sleep(4);
@@ -30,14 +30,15 @@ for (let i = 0; i < 3; i++) {
     if (textMatches(".*WiFi增强包.*").exists()) { // 弹窗关闭
         maid.click(556, 1600);
     }
+    if (text("WiFi连接受阻").exists()) { // 弹窗关闭
+        maid.click(518, 1690);
+    }
     maid.clickTextCenter("刷新");
 }
-maid.sleep(2);
+maid.sleep(8);
 maid.clickTextCenter("我的");
-maid.sleep(1);
+maid.sleep(2);
 maid.clickTextCenter("领取");
-
-
-maid.sleep(4);
+maid.sleep(3);
 maid.kill();
 maid.after();
